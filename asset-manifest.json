@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/baigiamasis/static/css/main.1fc3ca14.css",
+    "main.js": "/baigiamasis/static/js/main.ce582a68.js",
+    "static/media/book.png": "/baigiamasis/static/media/book.49324c078678eed8d76b.png",
+    "static/media/donate.jpg": "/baigiamasis/static/media/donate.9ba5dcc6b445a457bc3e.jpg",
+    "static/media/register.jpg": "/baigiamasis/static/media/register.90c0d3d9917026f4fd3c.jpg",
+    "static/media/hello.jpg": "/baigiamasis/static/media/hello.15e3e650bae7044ee7b5.jpg",
+    "static/media/admin.avif": "/baigiamasis/static/media/admin.9560973efec5b51ff426.avif",
+    "index.html": "/baigiamasis/index.html",
+    "main.1fc3ca14.css.map": "/baigiamasis/static/css/main.1fc3ca14.css.map",
+    "main.ce582a68.js.map": "/baigiamasis/static/js/main.ce582a68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fc3ca14.css",
+    "static/js/main.ce582a68.js"
+  ]
+}
