@@ -1,0 +1,119 @@
+/* 📌 Pagrindinis konteineris su fono paveikslėliu */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+    background: url("../images/admin.avif") no-repeat center center/cover; /* ✅ Pridėtas fono paveikslėlis */
+}
+
+/* 📌 Puslapio antraštė */
+.admin-title {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* 📌 Istorijų konteineris (viena eilutė) */
+.story-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto; /* ✅ Leidžia slinkti istorijas į šoną jei per daug */
+    padding: 20px;
+    width: 100%;
+}
+
+/* 📌 Kiekviena istorija */
+.story-card {
+    background: rgba(255, 255, 255, 0.85); /* ✅ Permatomas fonas */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 auto; /* ✅ Užtikrina, kad istorijos nesulūžtų */
+}
+
+/* 📌 Užvedus pelę – efektas */
+.story-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 📌 Nuotraukų dydis */
+.story-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 📌 Aprašymo stilius */
+.story-description {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* 📌 Laukiančios istorijos tekstas */
+.waiting-text {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* 📌 Statuso žymės */
+.approved {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* 📌 Mygtukų konteineris */
+.story-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* 📌 Patvirtinimo mygtukas */
+.approve-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.approve-button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* 📌 Ištrynimo mygtukas */
+.delete-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.delete-button:hover {
+    background: #c82333;
+    transform: scale(1.05);
+}

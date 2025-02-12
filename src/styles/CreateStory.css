@@ -1,0 +1,81 @@
+.create-story-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../images/book.png") no-repeat center center/cover;
+}
+
+.create-story-form {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+
+.input-field,
+.textarea-field,
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.textarea-field {
+  height: 120px;
+  resize: none;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.file-input {
+  background: white;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .create-story-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

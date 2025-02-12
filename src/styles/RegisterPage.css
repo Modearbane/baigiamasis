@@ -1,0 +1,88 @@
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../images/register.jpg") no-repeat center center/cover; /* ✅ Fono paveikslėlis */
+}
+
+.register-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.register-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.register-button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.login-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .register-box {
+    width: 90%;
+    padding: 20px;
+  }
+}

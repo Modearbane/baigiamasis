@@ -1,0 +1,75 @@
+/* 📌 Prisijungimo puslapis – centrinė dėžutė */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../images/hello.jpg") no-repeat center center/cover; /* ✅ Pakeisk foną į tinkamą */
+}
+
+/* 📌 Prisijungimo forma */
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 📌 Teksto stilius */
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* 📌 Gražūs įvedimo laukeliai */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* 📌 Prisijungimo mygtukas */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 📌 Animacija */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📌 Mobiliesiems pritaikymas */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+}

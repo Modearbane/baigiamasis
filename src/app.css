@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+.logout-button {
+  
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
+
+/* Navbar pagrindinis stilius */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Kairė navigacijos dalis */
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+/* Dešinė navigacijos dalis */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Prisijungimo mygtukas */
+.login-button,
+.register-button {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #007bff;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* Atsijungimo mygtukas */
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
+
